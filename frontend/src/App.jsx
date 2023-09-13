@@ -6,7 +6,7 @@ function App() {
   // const [count, setCount] = useState(0)
   const callAPIGET = async ()=>{
     try {
-      const data = await axios.get('http://localhost:8000/',{
+      const data = await axios.get('https://cookies-47a5.onrender.com/',{
         withCredentials:true
       });
       window.alert(data.data.status);
@@ -18,7 +18,7 @@ function App() {
   const callAPIPOST = async (e)=>{
     e.preventDefault();
     try {
-      const data = await axios.post('http://localhost:8000/',{'data':'store cookie in browser with POST req'},{
+      const data = await axios.post('https://cookies-47a5.onrender.com/',{'data':'store cookie in browser with POST req'},{
         withCredentials:true
       });
       window.alert(data.data.status);
